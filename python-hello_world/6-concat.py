@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#safasfa
 str1 = "Welcome to"
-str2 = " Holberton School!"
-print(str1 + str2)
+str2 = "Holberton School!"
+print(str1 + " " + str2)  # using str1 and str2
