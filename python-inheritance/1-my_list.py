@@ -1,10 +1,19 @@
 #!/usr/bin/python3
-"""Module defining the MyList class."""
+'''This is just a doc'''
+
 
 
 class MyList(list):
-    """A class that inherits from list."""
-
+    '''Di yazdim da'''
+    
+    def __init__(self):
+        self.menimlistimdiyee = []
+    
+    def append(self, a):
+        self.menimlistimdiyee += [a]
+    
     def print_sorted(self):
-        """Print the list but sorted in ascending order."""
-        print(sorted(self))
+        print(sorted(self.menimlistimdiyee))
+    
+    def __str__(self):
+        return str(self.menimlistimdiyee)
