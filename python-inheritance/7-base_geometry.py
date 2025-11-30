@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""this is document"""
-
+"""Defines BaseGeometry class"""
 
 class BaseGeometry:
-    """this is document"""
+    """BaseGeometry class"""
 
     def area(self):
+        """Raises an Exception since area is not implemented"""
         raise Exception("area() is not implemented")
-    """this is document"""
 
     def integer_validator(self, name, value):
+        """Validates that value is an integer greater than 0"""
         if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
-        elif value <= 0:
+        if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
-        self.name = value
