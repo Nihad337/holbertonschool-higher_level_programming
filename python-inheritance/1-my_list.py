@@ -1,10 +1,13 @@
 #!/usr/bin/python3
-"""ojsdfhvifdyh"""
+MyList = __import__('1-my_list').MyList
 
+my_list = MyList()
+my_list.append(1)
+my_list.append(4)
+my_list.append(2)
+my_list.append(3)
+my_list.append(5)
 
-class MyList(list):
-    """fwjonfhyiyhi"""
-
-    def print_sorted(self):
-        """fhgvyfdhgdfgbfdb"""
-        print(sorted(self))
+print("Original list:", my_list)
+print("Sorted list:", end=" ")
+my_list.print_sorted()
